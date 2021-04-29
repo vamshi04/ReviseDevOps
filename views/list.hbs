@@ -1,0 +1,26 @@
+<link rel="shortcut icon" href="#">
+<h1>
+    Courses
+</h1> 
+
+<table>
+    <thead>
+        <tr>
+            <th>Course Name</th>
+            <th>Course Id</th>
+            <th>Course Duration(Hrs)</th>
+            <th>Course Fee(USD)</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each data}}
+        <tr align="center">
+            <td>{{this.courseName}}</td>
+            <td>{{this.courseId}}</td>
+            <td>{{this.courseDuration}}</td>
+            <td>{{this.courseFee}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+   
+</table>
